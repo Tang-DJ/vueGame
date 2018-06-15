@@ -3,14 +3,14 @@
 </template>
 
 <script>
-    export default {
-      name: "back",
-      methods: {
-        back () {
-          this.$router.go(-1);
-        }
-      }
+export default {
+  name: 'back',
+  methods: {
+    back () {
+      this.$router.go(-1)
     }
+  }
+}
 </script>
 
 <style scoped>
