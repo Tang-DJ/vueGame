@@ -1,5 +1,6 @@
 <template>
   <div>
+    <back></back>
     <div>欢迎登录百万答题</div>
     <el-form :model="loginForm" :rules="rules">
       <el-form-item label="账号">
@@ -18,8 +19,24 @@
 </template>
 
 <script>
+import Back from '../components/back'
 export default {
-  name: "Register"
+  name: 'Register',
+  components: {Back},
+  data () {
+    return {
+      loginForm: {
+        account: '',
+        password: '',
+        checkPass: ''
+      },
+      rules: {
+        account: [
+          {required: true, message: '请输入用户账号', trigger: 'blur'}
+        ]
+      }
+    }
+  }
 }
 </script>
 

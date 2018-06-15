@@ -1,5 +1,6 @@
 <template>
   <div>
+    <back></back>
     <div>欢迎登录百万答题</div>
     <el-form :model="loginForm" :rules="rules">
       <el-form-item label="账号">
@@ -18,9 +19,11 @@
 </template>
 
 <script>
+import Back from '../components/back'
 export default {
   name: 'Login',
-  data() {
+  components: {Back},
+  data () {
     return {
       loginForm: {
         account: '',

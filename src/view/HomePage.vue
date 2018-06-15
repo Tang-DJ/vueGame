@@ -13,11 +13,10 @@ export default {
   name: 'HomePage',
   methods: {
     onLogin () {
-
-      this.$router.push({path:'/Login'})
+      this.$router.push({path: '/Login'})
     },
     onRegister () {
-
+      this.$router.push({path: '/Register'})
     }
   }
 }
