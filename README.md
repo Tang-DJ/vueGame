@@ -2,6 +2,13 @@
 
 > 使用vue element 搭建的答题游戏
 
+
+使用eslint进行格式管理 初期未考虑样式问题
+element-ui进行样式管理
+利用koa进行后端搭建
+
+
+## Build Setup
 ## Build Setup
 
 ``` bash
@@ -29,4 +36,3 @@ npm test
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-使用eslint进行格式管理 初期未考虑样式问题

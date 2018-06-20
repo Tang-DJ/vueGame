@@ -9,7 +9,7 @@
       <el-form-item label="密码" prop="password">
         <el-input type="password" v-model="loginForm.password"></el-input>
       </el-form-item>
-      <el-button>登录</el-button>
+      <el-button @click="onLogin">登录</el-button>
     </el-form>
 
   </div>
@@ -35,6 +35,11 @@ export default {
         }]
 
       }
+    }
+  },
+  methods: {
+    onLogin () {
+      this.$router.push('/Welcome')
     }
   }
 }
