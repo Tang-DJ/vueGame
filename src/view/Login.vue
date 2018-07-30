@@ -9,6 +9,9 @@
       <el-form-item label="密码" prop="password">
         <el-input type="password" v-model="loginForm.password"></el-input>
       </el-form-item>
+      <el-form-item prop="remember">
+        <el-checkbox v-model="checked">记住密码</el-checkbox>
+      </el-form-item>
       <el-button @click="onLogin">登录</el-button>
     </el-form>
 
